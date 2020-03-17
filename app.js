@@ -18,7 +18,7 @@ mongoose.connect("mongodb+srv://prashant_tomar:qwertyuiop23@clustermeg-dkebi.mon
 var nameSchema = new mongoose.Schema({
     firstName: String,
     lastName: String,
-    age:String
+    age: String
 });
 var User = mongoose.model("User", nameSchema);
 var bodyParser = require('body-parser');
