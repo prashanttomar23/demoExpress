@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 
 
-app.listen(3000, function () {
+app.listen(8000, function () {
     console.log("helo");
 });
 app.get("/", function (req, res) {
@@ -17,7 +17,8 @@ mongoose.connect("mongodb+srv://prashant_tomar:qwertyuiop23@clustermeg-dkebi.mon
     });
 var nameSchema = new mongoose.Schema({
     firstName: String,
-    lastName: String
+    lastName: String,
+    age:String
 });
 var User = mongoose.model("User", nameSchema);
 var bodyParser = require('body-parser');
